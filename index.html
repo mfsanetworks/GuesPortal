@@ -81,7 +81,7 @@
     fetch(window.location.href + 'getCode', { method: 'GET', })
       .then(response => response.json())
       .then(data => {
-        var ssid = "MyWifiSsid";
+        var ssid = "MFSA_SCMS";
         var passcode = status.ipsk;
         var wifiInfo = "WIFI:T:WPA;S:" + ssid + ";P:" + passcode + ";;";
         var qrcode = new QRCode(document.getElementById("qrcode"), {
